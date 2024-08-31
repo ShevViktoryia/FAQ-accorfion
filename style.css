@@ -19,3 +19,30 @@ body {
   background-color: #2f2f2f;
   color: azure;
 }
+
+.accorgion__item {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 20px auto;
+  background-color: #766b6b74;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.accorgion__item:hover {
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+}
+
+.accorgion__item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accorgion__item-text {
+  font-size: 20px;
+  max-height: 0;
+  overflow: hidden;
+}
