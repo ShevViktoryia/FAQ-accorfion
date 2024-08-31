@@ -20,6 +20,10 @@ body {
   color: azure;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .accorgion__item {
   display: flex;
   flex-direction: column;
@@ -52,4 +56,12 @@ body {
 .active .accorgion__item-text {
   max-height: 400px;
   margin-top: 10px;
+}
+
+.arrow {
+  transition: 0.5s;
+}
+
+.active .arrow {
+  transform: rotate(180deg);
 }
