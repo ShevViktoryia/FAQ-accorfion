@@ -37,3 +37,12 @@ data.forEach((item) => {
   accorgion__item.append(item_text);
   accorgion.append(accorgion__item);
 });
+
+const accorgion__item = document.querySelectorAll(".accorgion__item");
+
+accorgion__item.forEach(
+  (item) =>
+    (item.onclick = () => {
+      item.classList.toggle("active");
+    })
+);
